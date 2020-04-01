@@ -7,6 +7,6 @@
     "live-server": "^1.2.1"
   },
   "scripts": {
-    "start": " tsc -w | live-server"
+    "dev": " tsc -w | live-server"
   }
 }
