@@ -1,12 +1,12 @@
 "use strict";
 //string, number, boolean
-var nome = "Junior";
-var idade = 27;
-var possuiHobbies = true;
+let nome = "Junior";
+let idade = 27;
+let possuiHobbies = true;
 //array
-var hobbies = ["Games", "Futebol", 1];
+let hobbies = ["Games", "Futebol", 1];
 //tuplas
-var endereco = ["Av. principal", 22];
+let endereco = ["Av. principal", 22];
 //enums
 var Cor;
 (function (Cor) {
@@ -14,7 +14,7 @@ var Cor;
     Cor["Verde"] = "Verde";
     Cor["Azul"] = "Verde";
 })(Cor || (Cor = {}));
-var minhaCor = Cor.Verde;
+let minhaCor = Cor.Verde;
 console.log(minhaCor);
 //funções
 // tipo void não retorna nada
@@ -26,17 +26,17 @@ function multiplicar(numA, numB) {
 }
 console.log(multiplicar(20, 20));
 //tipo função
-var calculo;
+let calculo;
 calculo = multiplicar;
 //objetos
-var usuarios = {
+let usuarios = {
     nome: "Junior",
     idade: 27
 };
 //Desafio
-var funcionario = {
+let funcionario = {
     supervisores: ["Junior", "Joice", "Duarte"],
-    batePonto: function (horas) {
+    batePonto(horas) {
         if (horas <= 8) {
             return "Ponto Normal";
         }
@@ -45,9 +45,9 @@ var funcionario = {
         }
     }
 };
-var funcionario2 = {
+let funcionario2 = {
     supervisores: ["Junior", "Joice", "Duarte"],
-    batePonto: function (horas) {
+    batePonto(horas) {
         if (horas <= 8) {
             return "Ponto Normal";
         }
@@ -57,18 +57,18 @@ var funcionario2 = {
     }
 };
 //Union types - dois tipos
-var nota = 10;
+let nota = 10;
 //Tipo never - erro,laço infinito...
 function falha(msg) {
     throw new Error(msg);
 }
-var contaBancaria = {
+let contaBancaria = {
     saldo: 3456,
-    depositar: function (valor) {
+    depositar(valor) {
         this.saldo += valor;
     }
 };
-var correntista = {
+let correntista = {
     nome: "Junior",
     contaBancaria: contaBancaria,
     contatos: ["97016-3734", "2235-6908"]
